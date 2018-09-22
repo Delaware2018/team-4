@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime, timedelta
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 class Profile(models.Model):
@@ -27,4 +29,4 @@ from django.urls import reverse
 
 class Donation(models.Model):
     donor = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    models.FloatField(validators=[MinValueValidator(1), MaxValueValidator(100000)], default=1)
+#models.FloatField(validators=[MinValueValidator(1), MaxValueValidator(100000)], default=1)

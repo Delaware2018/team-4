@@ -10,6 +10,7 @@ class Home extends Component{
                 <Nav/>
                 <Hero/>
                 <AboutHome/>
+                <hr/>
                 {/* <News/>
                 <Sponsors/>
                 <Foot/> */}

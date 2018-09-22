@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Button, Modal, ModalBody, ModalHeader, ModalFooter, NavLink } from 'mdbreact';
+import { Container, Button, Modal, ModalBody, ModalHeader, ModalFooter, NavLink, Input } from 'mdbreact';
 
 
 class SignUpMdodal extends React.Component {
@@ -21,9 +21,20 @@ class SignUpMdodal extends React.Component {
       <Container>
         <NavLink to="#" onClick={this.toggle}>Login/Signup</NavLink>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={this.toggle}>Welcome! logo</ModalHeader>
           <ModalBody>
-            (...)
+          <Input label="Email" hint="placeholder" />
+          <Input label="Password" hint="placeholder" />
+          <Container>
+            <div className="row">
+              <div className="col-sm-6">
+                <a href="#">Forgot Password</a>
+              </div>
+              <div className="col-sm-6">
+               <Button>Sign In</Button>
+              </div>
+            </div>
+          </Container>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={this.toggle}>Close</Button>{' '}

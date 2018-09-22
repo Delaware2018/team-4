@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import { Button, Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Link ,Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './Nav.css';
 import SignUpMdodal from '../SignUpMdodal/SignUpMdodal';
@@ -23,7 +23,7 @@ class Nav extends Component {
         return (
             <Router>
                 <Navbar color="success-color" dark expand="md" scrolling>
-                    <NavbarBrand href="/">
+                    <NavbarBrand href="/" >
                         <strong>Navbar</strong>
                     </NavbarBrand>
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
@@ -45,7 +45,7 @@ class Nav extends Component {
                           <SignUpMdodal></SignUpMdodal>
                           </NavItem>
                           <NavItem className="mr-3 donate">
-                              <NavLink to="#">Donate</NavLink>
+                              <NavLink to="/Donate">Donate</NavLink>
                           </NavItem>
                         </NavbarNav>
                     </Collapse>

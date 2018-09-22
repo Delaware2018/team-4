@@ -1,5 +1,4 @@
-# team-4
-DOCUMENTATION
+# team-4 DOCUMENTATION
 
 While the designs for the Student Ambassador dashboard are completed, our final product is in the MVP (most viable product) stage of development. From our understanding, your website is maintained and was developed by a freelance web developer, so the following is intended for them (or anyone else involved in the continuation of this project) to understand our decision and development process.
 

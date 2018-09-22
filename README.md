@@ -1,4 +1,4 @@
-# team-4 DOCUMENTATION
+# TECHNICAL DOCUMENTATION
 
 While the designs for the Student Ambassador dashboard are completed, our final product is in the MVP (most viable product) stage of development. From our understanding, your website is maintained and was developed by a freelance web developer, so the following is intended for them (or anyone else involved in the continuation of this project) to understand our decision and development process.
 
@@ -49,6 +49,20 @@ The motivations behind the SA program is to develop a deeper connection between 
 Utilizing technology and social media, SA's will each have accounts on the B+ website. The online dashboard will give SA's information on their school's fundraising efforts that are currently being tracked, such as top teams, top fundraising members, and current amount raised. Social media accounts are also heavily integrated into the dashboard; every new post on the B+ blog, Twitter, Instagram, and Facebook will be easily accessible on the dashboard for students to share to their personal networks. To incentivize students to actively engage in the program, a badge system will allow students to collect Positive Points from their work with B+. Students can also easily leave messages for their managers in app and download resources for emailing sponsors, planning events, and presentations.
 
 Finally, the donations page was iterated based on the need to provide more indicators of security and to emphasize recurring donations (but with user customization). Donors will also be able to create their own accounts to view analytics on their donations over time and stories of the Be Positive Heroes.
+
+_____________________________
+
+# DESIGN
+## Mockups / Style Guide
+View mockup Sketch file in Github repo. All colors and fonts are inherited from B+'s current website
+- green: 0CA643
+- yellow: ECC213
+- header typeface: Bitter
+- body typeface: Open Sans
+
+
+## Protoype
+View protoype on Sketch file with mockups and wireframes. (Command + P / Ctrl + P)
 
 
 

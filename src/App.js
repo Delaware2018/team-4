@@ -8,6 +8,7 @@ import {
   Route
 } from 'react-router';
 import Home from './Component/Home/Home';
+import AccountChoices from './Component/AccountChoices/AccountChoices';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
       div className = "App" >
         <Switch >
         <Route exact path = "/"component = {Home} />
+        <Route path = "/signup" component = {AccountChoices} />
         </Switch> 
       </div>
     );

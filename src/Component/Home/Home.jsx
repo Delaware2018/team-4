@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero';
 import AboutHome from '../AboutHome/AboutHome';
 import FooterPage from '../FooterPage/FooterPage';
 import LatestNews from '../LatestNews/LatestNews';
+import SponsorsCarousel from '../SponsorsCarousel/SponsorsCarousel';
 
 class Home extends Component{
     render(){
@@ -14,9 +15,9 @@ class Home extends Component{
                 <AboutHome/>
                 <hr/>
                 {/* <News/>
-                <Sponsors/>
                  */}
-                 <LatestNews/>
+                <SponsorsCarousel/>
+                <LatestNews/>
                 <FooterPage/>
             </div>
         );

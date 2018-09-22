@@ -21,24 +21,20 @@ class SignUpMdodal extends React.Component {
       <Container>
         <NavLink to="#" onClick={this.toggle}>Login/Signup</NavLink>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Welcome! logo</ModalHeader>
+          <ModalHeader toggle={this.toggle}>logo </ModalHeader>
           <ModalBody>
-          <Input label="Email" hint="placeholder" />
-          <Input label="Password" hint="placeholder" />
-          <Container>
-            <div className="row">
-              <div className="col-sm-6">
-                <a href="#">Forgot Password</a>
-              </div>
-              <div className="col-sm-6">
-               <Button>Sign In</Button>
-              </div>
-            </div>
-          </Container>
+
+          <Input label="Email"  />
+          <Input label="Password" />
+          <a href="#">new user</a>
           </ModalBody>
           <ModalFooter>
-            <Button color="secondary" onClick={this.toggle}>Close</Button>{' '}
-            <Button color="primary">Save changes</Button>
+          
+          <div className="col-4 mx-auto">
+          <a href="#" >Forgot Password</a>
+          </div>
+          <div className="col-2"></div>
+          <Button color="primary" className="col-4 ">Sign In</Button>
           </ModalFooter>
         </Modal>
       </Container>

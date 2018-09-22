@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './Nav.css';
 
 
 class Nav extends Component {
@@ -41,7 +42,7 @@ class Nav extends Component {
                           <NavLink to="#">Shop</NavLink>
                           </NavItem>
                           <NavItem className="mr-3">
-                          <NavLink to="#">Login</NavLink>
+                          <NavLink to="#">Login/Sign up</NavLink>
                           </NavItem>
                           <NavItem className="mr-3 donate">
                               <NavLink to="#">Donate</NavLink>

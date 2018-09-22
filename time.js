@@ -1,7 +1,7 @@
 
-  var days = function getDayOfYear()
+  var days = function getDayOfYear(d)
   {
-      var d = new Date();
+      //var d = new Date();
       var day = d.getDate();
       var month = d.getMonth();
       if(month == 0)

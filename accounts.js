@@ -41,6 +41,20 @@ function checkAccount(email, password)
     return;
 }
 
+function accountDays(dateJoined)
+{
+  var date1 = dateJoined;
+  var d = new Date();
+  var date2 = d.getDate();
+  var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+  console.log(diffDays);
+  //return diffDays;
+}
+
+//var daysFunction = require('./time.js');
+//var days = daysFunction.days();
+
 //createAccount(firstName, lastName, email, password, accountType, state, dateJoined)
 createAccount('John', 'Smith', 'JSmith@gmail.com', 'password', 'donor', 'NY', 09/20/18);
 createAccount('Susan', 'Gold', 'SGold@aol.com', 'helloWorld', 'donor', 'NM', 08/22/17);
@@ -50,3 +64,6 @@ createAccount('Melissa', 'Van Nordan', 'MVannordan@gmail.com', 'pa$$w0rd', 'amba
 checkAccount('MThomas@yahoo.com', 'qwerty');
 checkAccount('SGold@aol.com', 'helloWrld');
 checkAccount('MVanordan@gmail.com', 'pa$$w0rd');
+
+//accountDays(database[1][6]);
+//accountDays(database[2][6]);

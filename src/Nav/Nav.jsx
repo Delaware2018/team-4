@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import { Button, Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './Nav.css';
+import SignUpMdodal from '../SignUpMdodal/SignUpMdodal';
 
 class Nav extends Component {
     constructor(props) {
@@ -27,32 +29,23 @@ class Nav extends Component {
                     { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
                     <Collapse isOpen = { this.state.collapse } navbar>
                         <NavbarNav left>
-                          <NavItem active>
-                              <NavLink to="#">Home</NavLink>
-                          </NavItem>
-                          <NavItem>
-                              <NavLink to="#">Features</NavLink>
-                          </NavItem>
-                          <NavItem>
-                              <NavLink to="#">Pricing</NavLink>
-                          </NavItem>
-                          <NavItem>
-                            <Dropdown>
-                                <DropdownToggle nav caret>Dropdown</DropdownToggle>
-                                <DropdownMenu>
-                                    <DropdownItem href="#">Action</DropdownItem>
-                                    <DropdownItem href="#">Another Action</DropdownItem>
-                                    <DropdownItem href="#">Something else here</DropdownItem>
-                                    <DropdownItem href="#">Something else here</DropdownItem>
-                                </DropdownMenu>
-                            </Dropdown>
-                          </NavItem>
+                          
                         </NavbarNav>
                         <NavbarNav right>
-                          <NavItem>
-                            <form className="form-inline md-form mt-0">
-                              <input className="form-control mr-sm-2 mb-0 text-white" type="text" placeholder="Search" aria-label="Search"/>
-                            </form>
+                          <NavItem className="mr-3">
+                            <NavLink to="#">About</NavLink>
+                          </NavItem>
+                          <NavItem className="mr-3">
+                          <NavLink to="#">Get Involved</NavLink>
+                          </NavItem>
+                          <NavItem className="mr-3">
+                          <NavLink to="#">Shop</NavLink>
+                          </NavItem>
+                          <NavItem className="mr-3">
+                          <SignUpMdodal></SignUpMdodal>
+                          </NavItem>
+                          <NavItem className="mr-3 donate">
+                              <NavLink to="#">Donate</NavLink>
                           </NavItem>
                         </NavbarNav>
                     </Collapse>

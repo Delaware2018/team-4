@@ -7,10 +7,10 @@ While the designs for the Student Ambassador dashboard are completed, our final 
 -  axios: ^0.18.0,
 - jquery: ^3.3.1,
 - mdbreact: ^4.7.1,
-   - react": ^16.5.2,
-   - react-dom": ^16.5.2,
-   - react-router": ^4.3.1,
-   - react-scripts": 1.1.5
+   - react: ^16.5.2,
+   - react-dom: ^16.5.2,
+   - react-router: ^4.3.1,
+   - react-scripts: 1.1.5
 
 
 ## REACT
